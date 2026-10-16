@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티 D-Day 일정 관리 앱</title>
+    <!-- CSS 디자인 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>📅 멀티 D-Day 관리자</h2>
+        
+        <!-- 일정 입력 폼 영역 -->
+        <div class="input-card">
+            <div class="input-group">
+                <label for="eventTitle">일정 제목</label>
+                <input type="text" id="eventTitle" placeholder="예: 자격증 시험, 휴가">
+            </div>
+
+            <div class="input-group">
+                <label for="targetDate">목표 날짜 선택</label>
+                <input type="date" id="targetDate">
+            </div>
+
+            <button onclick="addDday()">일정 추가하기</button>
+        </div>
+
+        <!-- 추가된 D-Day 카드들이 들어갈 목록 영역 -->
+        <div id="ddayList" class="dday-list">
+            <!-- 자바스크립트에 의해 카드가 여기에 동적으로 추가됩니다 -->
+        </div>
+    </div>
+
+    <!-- JavaScript 기능 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>

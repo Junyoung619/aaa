@@ -1,0 +1,136 @@
+/* 전체 페이지 기본 스타일 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+}
+
+h2 {
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 입력 영역 카드 스타일 */
+.input-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+}
+
+.input-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* D-Day 카드 목록 스타일 */
+.dday-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* 생성되는 각각의 D-Day 카드 */
+.dday-item {
+    background-color: #ffffff;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #2563eb;
+}
+
+.dday-item.warning {
+    border-left-color: #dc2626; /* 마감 임박 시 빨간색 테두리 */
+}
+
+.info-box {
+    text-align: left;
+}
+
+.item-title {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.item-date {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.count-box {
+    text-align: right;
+}
+
+.dday-badge {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.dday-item.warning .dday-badge {
+    color: #dc2626;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 4px;
+}
+
+.delete-btn:hover {
+    color: #dc2626;
+}
